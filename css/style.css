@@ -1,10 +1,10 @@
-*{
-  font-family: 'Raleway', sans-serif;
-  box-sizing: border-box;
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
-    --color-main: #F7F7F7;
+    --color-main: rgba(208, 57, 92, 0.95);
     --color-main-shadow: #07ACE629 5px 10px 14px;
     --color-white: #FFFFFF;
     --color-blue: #08A6E4;
@@ -16,7 +16,7 @@
     --font-raleway: 'Raleway', sans-serif;
 }
 
- a {
+a {
     text-decoration: none;
 }
 
@@ -66,21 +66,25 @@
 
 .menu_link:hover {
     color: var(--color-black);
-    border-color: var(--color-main);
+    border-color: var(--color-blue);
 }
+
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .opening {
     margin-top: 130px;
     text-align: center;
 }
+
 .opening_inside {
     font-family: var(--font-raleway);
     font-size: 49px;
 }
+
 .opening_inside_text {
     font-family: var(--font-raleway);
     margin: 20px 0 38px 0;
@@ -112,17 +116,20 @@
 .statistics {
     margin-top: 100px;
 }
+
 .statistics_container {
     max-width: 800px;
     margin: 100px auto 120px;
     display: flex;
     justify-content: space-between;
 }
+
 h2 {
     font-family: var(--font-raleway);
     font-size: 36px;
     text-align: center;
 }
+
 .statistics_single {
     max-width: 160px;
     display: flex;
@@ -132,15 +139,18 @@ h2 {
     text-align: center;
     font-family: var(--font-raleway);
 }
+
 .statistics_circle {
     border-radius: 50%;
     width: 63px;
     height: 63px;
     position: relative;
 }
+
 .statistics_img {
     position: absolute;
 }
+
 .statistics_single:nth-child(1) .statistics_circle {
     background-color: var(--color-red);
 }
@@ -167,6 +177,7 @@ h2 {
     top: 6px;
     left: 50%;
 }
+
 .statistics_number {
     font-size: 20px;
     font-weight: 800;
@@ -182,13 +193,13 @@ h2 {
 .benefits {
     padding: 100px 0;
     background-color: #F7F7F7;
-  }
-  
-  .benefits_container {
+}
+
+.benefits_container {
     padding: 0 100px;
-  }
-  
-  .benefits_single {
+}
+
+.benefits_single {
     background-color: white;
     border: 1px solid #E8E9ED;
     display: flex;
@@ -196,47 +207,47 @@ h2 {
     align-items: flex-end;
     margin-bottom: 37px;
     border-radius: 5px;
-  }
-  
-  .benefits_text {
+}
+
+.benefits_text {
     box-sizing: content-box;
     max-width: 415px;
     margin: 90px 36px;
-  }
-  
-  .benefits_text::after {
+}
+
+.benefits_text::after {
     content: "";
     width: 332px;
     height: 4px;
     background-color: var(--accent-color);
     display: block;
     margin-top: 50px;
-  }
-  
-  .benefits_description {
+}
+
+.benefits_description {
     margin-top: 30px;
     line-height: 22px
-  }
-  
-  .benefits_image {
+}
+
+.benefits_image {
     position: relative;
-  }
-  
-  .benefits_image img {
+}
+
+.benefits_image img {
     position: relative;
     z-index: 2;
-  }
-  
-  .benefits_single-notebook {
+}
+
+.benefits_single-notebook {
     --accent-color: var(--color-red);
-  }
-  
-  .benefits_single-notebook .benefits_image {
+}
+
+.benefits_single-notebook .benefits_image {
     margin-right: 117px;
     margin-bottom: 38px;
-  }
-  
-  .benefits_single-notebook .benefits_image::before {
+}
+
+.benefits_single-notebook .benefits_image::before {
     content: "";
     width: 180px;
     height: 180px;
@@ -247,23 +258,23 @@ h2 {
     right: 0;
     top: -40px;
     transform: rotate(45deg);
-  }
-  
-  .benefits_single-notebook .benefits_image img {
+}
+
+.benefits_single-notebook .benefits_image img {
     width: 386px;
     height: auto;
     position: relative;
     z-index: 2;
-  }
-  
-  
-  .benefits_single-phone {
+}
+
+
+.benefits_single-phone {
     --accent-color: var(--color-blue);
     flex-direction: row-reverse;
     padding: 0 20px 0 70px;
-  }
-  
-  .benefits_single-phone .benefits_image::before {
+}
+
+.benefits_single-phone .benefits_image::before {
     content: "";
     width: 320px;
     height: 320px;
@@ -273,36 +284,36 @@ h2 {
     position: absolute;
     left: 0;
     top: -20px;
-  }
-  
-  .benefits_single-phone .benefits_image img {
+}
+
+.benefits_single-phone .benefits_image img {
     width: 426px;
     height: auto;
-  }
-  
-  .benefits_single-phone .benefits_text {
+}
+
+.benefits_single-phone .benefits_text {
     margin: 70px 0;
-  }
-  
-  .benefits_double {
+}
+
+.benefits_double {
     --accent-color: var(--color-green);
     display: flex;
-  }
-  
-  .benefits_double > div {
+}
+
+.benefits_double > div {
     margin-bottom: 0;
-  }
-  
-  .benefits_single-solo {
+}
+
+.benefits_single-solo {
     max-width: 620px;
-  }
-  
-  .benefits_single-solo .benefits_text {
+}
+
+.benefits_single-solo .benefits_text {
     max-width: none;
     margin: 70px 35px;
-  }
-  
-  .benefits_single-image {
+}
+
+.benefits_single-image {
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -310,91 +321,91 @@ h2 {
     background-color: var(--accent-color);
     border: none;
     margin-left: 60px;
-  }
-  
-  .benefits_single-image img {
+}
+
+.benefits_single-image img {
     width: 295px;
     height: auto;
     margin-top: 55px;
-  }
-  
-  .pricing {
+}
+
+.pricing {
     margin: 100px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .pricing_boxes {
+}
+
+.pricing_boxes {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
     font-family: var(--font-raleway);
-  }
-  
-  .pricing_box {
+}
+
+.pricing_box {
     width: 370px;
     border-radius: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid var(--accent-color);
-  }
-  
-  .pricing_details {
+}
+
+.pricing_details {
     margin-top: 34px;
     margin-bottom: 60px;
     text-align: center;
-  }
-  
-  .pricing_type {
+}
+
+.pricing_type {
     font-size: 20px;
     font-family: var(--font-raleway);
     font-weight: 700;
-  }
-  
-  .pricing_price {
+}
+
+.pricing_price {
     font-size: 46px;
     font-family: var(--font-open-sans);
     font-weight: 300;
     margin-top: 25px;
     color: var(--accent-color);
-  }
-  
-  .pricing_limited {
+}
+
+.pricing_limited {
     text-align: center;
     margin-top: 15px;
     font-size: 12px;
     font-family: var(--font-raleway);
     font-weight: 700;
-  }
-  
-  .pricing_items {
+}
+
+.pricing_items {
     text-align: center;
-  }
-  
-  .pricing_item {
+}
+
+.pricing_item {
     font-size: 14px;
     margin-bottom: 20px;
-  }
-  
-  .pricing_item::before {
+}
+
+.pricing_item::before {
     content: "";
     width: 11px;
     height: 11px;
     display: inline-block;
     margin-right: 10px;
     background-image: url("../assets/checkmark_1.svg");
-  }
-  
-  .pricing_item-not::before {
+}
+
+.pricing_item-not::before {
     background-image: url("../assets/close.svg");
-  }
+}
 
 
-  .pricing_box .btn {
+.pricing_box .btn {
     display: inline;
     width: 150px;
     height: 50px;
@@ -407,7 +418,7 @@ h2 {
     opacity: 1;
     background-color: var(--accent-color);
     font-family: var(--font-raleway);
-  }
+}
 
 .btn {
     display: inline-block;
@@ -416,139 +427,140 @@ h2 {
     font-family: var(--font-raleway);
     font-weight: 700;
 }
-  
-  .pricing_box-basic {
-   --accent-color: var(--color-red);
-  }
-  
-  .pricing_box-basic .pricing_price {
+
+.pricing_box-basic {
+    --accent-color: var(--color-red);
+}
+
+.pricing_box-basic .pricing_price {
     margin-bottom: 30px;
-  }
-  
-  
-  .pricing_box-professional {
+}
+
+
+.pricing_box-professional {
     --accent-color: var(--color-blue);
     width: 400px;
     margin: 0 40px;
     box-shadow: 5px 1px 27px var(--color-light-grey);
-  }
-  
-  .pricing_box-professional .pricing_type {
-    font-size: 21px;
-  }
-  
-  .pricing_box-professional .pricing_item {
-    margin-bottom: 25px;
-  }
-  
-  .pricing_box-premium {
-    --accent-color: var(--color-green);
-  }
-  
+}
 
-  .contact {
+.pricing_box-professional .pricing_type {
+    font-size: 21px;
+}
+
+.pricing_box-professional .pricing_item {
+    margin-bottom: 25px;
+}
+
+.pricing_box-premium {
+    --accent-color: var(--color-green);
+}
+
+.contact_container {
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 200px;
+}
+
+.contact {
     padding: 80px 100px 100px;
     display: flex;
     justify-content: center;
+}
 
-  }
-  
-  .contact_column {
+.contact_column {
     width: 50%;
-    margin: 50px 0 0 0;
+}
 
-  }
-  
-  .contact_title {
+.contact_title {
     font-size: 49px;
     line-height: 59px;
-    margin: -180px 0 0 -200px;
+}
 
-  }
-  
-  .contact_instruction {
-    margin: 22px 0 42px 0;
+.contact_instruction {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin: 22px 0 40px 0;
     font-size: 16px;
     line-height: 22px;
-    margin-left: 85px;
-  }
-  
-  .contact_details {
-    display: flex;
-    justify-content: flex-start;
+}
+
+.contact_details {
+    padding-left: 130px;
+    padding-right: 140px;
     color: var(--color-light-grey);
-    align-items: center;
-  }
-  
-  .details_item {
+}
+
+.details_item {
     color: var(--color-light-grey);
     font-weight: 500;
     text-decoration: none;
-    margin-left: 85px;
+    margin-left: 20px;
 
-  }
-  
-  .details_item:first-of-type {
+}
+
+.details_item:first-of-type {
     margin-right: 20px;
-  }
-  
-  .details_item img {
+}
+
+.details_item img {
     margin-right: 10px;
-  }
-  
-  
-  .form {
+}
+
+
+.form {
     display: flex;
     flex-direction: column;
-  }
-  
-  .form_field {
+}
+
+.form_field {
     display: flex;
     flex-direction: column;
-  }
-  
-  .form_field:first-of-type {
+}
+
+.form_field:first-of-type {
     margin-bottom: 42px;
-  }
-  
-  .form_label {
+}
+
+.form_label {
     font-weight: bold;
     text-transform: uppercase;
     color: var(--color-blue);
     line-height: 14px;
     letter-spacing: 3px;
     font-size: 11px;
-  }
-  
-  .form_input {
+}
+
+.form_input {
     border: none;
     border-bottom: 1px solid var(--color-light-grey);
     background-color: transparent;
     line-height: 42px;
-  }
-  
-  .form_consent {
+}
+
+.form_consent {
     margin-top: 30px;
-  }
-  
-  .form_checkbox {
+}
+
+.form_checkbox {
     display: block;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
-  }
-  
-  .form_checkbox input {
+}
+
+.form_checkbox input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  .form_checkbox .checkbox {
+}
+
+.form_checkbox .checkbox {
     position: absolute;
     top: 0;
     left: 0;
@@ -557,60 +569,60 @@ h2 {
     background-color: var(--color-white);
     border: 1px solid var(--color-light-grey);
     border-radius: 4px;
-  }
-  
-  .form_checkbox input:checked~.checkbox {
+}
+
+.form_checkbox input:checked ~ .checkbox {
     background-image: url(../assets/checkmark.svg);
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
 
-  }
-  
-  .form_checkbox .consent_text {
+}
+
+.form_checkbox .consent_text {
     margin: 0 10px;
     font-size: 12px;
     color: var(--color-light-grey);
     line-height: 17px;
-  }
-  
-  .form .btn {
+}
+
+.form .btn {
     font-size: 13px;
     padding: 20px 97px;
     align-self: flex-end;
     margin-top: 20px;
     border-radius: 35px;
     background-color: var(--color-blue);
+    margin-bottom: 50px;
 
-  }
-  
- 
-  
-  .footer {
+}
+
+
+.footer {
     box-shadow: 0 -5px 40px #00000029;
     padding: 20px 0;
-  }
-  
-  .footer_container {
+}
+
+.footer_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .footer_info {
+}
+
+.footer_info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  }
-  
-  .footer_copy {
+}
+
+.footer_copy {
     font-size: 11px;
     line-height: 24px;
     color: var(--color-light-grey);
     margin-top: 6px;
     margin-left: 138px;
-  }
-  
-  .footer_icons a:first-of-type {
+}
+
+.footer_icons a:first-of-type {
     margin-right: 25px;
-  }
+}
