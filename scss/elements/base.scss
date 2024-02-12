@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1352px;
+  margin: 0 auto;
+  opacity: 1;
+
+  @include desktop {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-raleway);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+.logo-header-container {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: var(--font-raleway);
+  color: var(--color-primary);
+}
